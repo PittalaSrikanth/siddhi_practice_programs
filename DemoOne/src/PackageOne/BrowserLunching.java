@@ -14,7 +14,7 @@ public class BrowserLunching {
 	{
 			
 		// Chrome brower
-		System.setProperty("webdriver.chrome.driver","D:\\Selenium_Practices\\chromedriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","D:\\Selenium_01\\chromedriver_win32 (9)\\chromedriver.exe");
 		WebDriver chrome = new ChromeDriver();
 		chrome.get("https://www.google.co.in/");
 		System.out.println(chrome.getTitle());
@@ -27,10 +27,10 @@ public class BrowserLunching {
 		ff.get("https://www.google.co.in/");
 		System.out.println(ff.getTitle());
 		ff.close();
-		ff.quit();
+//		ff.quit();
 		
 		// IEDriver
-		System.setProperty("webdriver.ie.driver","D:\\Selenium_Practices\\chromedriver\\iedriver.exe");
+		System.setProperty("webdriver.ie.driver","D:\\10112021\\IEDriverServer_x64_3.150.2 (1)\\IEDriverServer.exe");
 		WebDriver ie = new InternetExplorerDriver();
 		ie.get("https://www.google.co.in/");
 		System.out.println(ie.getTitle());

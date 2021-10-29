@@ -34,7 +34,7 @@ public class WebDriverManagerBrowsers {
 		ff.get("https://www.google.co.in/");
 		System.out.println(ff.getTitle());
 		ff.close();
-		ff.quit();
+//		ff.quit();
 
 		
 		// IEDriver
@@ -42,8 +42,8 @@ public class WebDriverManagerBrowsers {
 		WebDriver ie = new InternetExplorerDriver();
 		ie.get("https://www.google.co.in/");
 		System.out.println(ie.getTitle());
-		ie.close();
-		ie.quit();
+//		ie.close();
+//		ie.quit();
 
 		
 		// EdgeDriver
