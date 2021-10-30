@@ -15,7 +15,9 @@ public class HeadlessBrowsersluanching {
 	{
 		// ChromeDriver
 		ChromeOptions cops = new ChromeOptions();
-		cops.addArguments("--headless");
+//		cops.addArguments("--headless");
+		cops.setHeadless(true);
+		
 		WebDriverManager.chromedriver().setup();
 //		WebDriverManager.chromedriver().version("94.0.4606.71").setup();
 		WebDriver chrome = new ChromeDriver(cops);
@@ -26,7 +28,8 @@ public class HeadlessBrowsersluanching {
 		
 		// FirefoxDriver
 		FirefoxOptions fops = new FirefoxOptions();
-		fops.setHeadless(true);
+		fops.addArguments("--headless");
+//		fops.setHeadless(true);
 		WebDriverManager.firefoxdriver().setup();
 		WebDriver ff = new FirefoxDriver(fops);
 		ff.get("https://www.google.co.in/");
