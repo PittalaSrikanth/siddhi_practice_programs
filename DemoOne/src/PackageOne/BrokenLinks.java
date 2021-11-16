@@ -30,19 +30,10 @@ public class BrokenLinks {
 				System.out.println("link broken  " + linkurl);
 			}else {
 				System.out.println("Valid link");
-			}
-				
+			}				
 		}
-		
-		
-		
 		chrome.close();
-		chrome.quit();
-
-		
-		
-
-		
+		chrome.quit();		
 	}
 
 }

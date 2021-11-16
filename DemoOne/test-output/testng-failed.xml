@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="Test1(failed)">
+    <parameter name="pass" value="admin123"/>
+    <parameter name="adduser" value="User564"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="user" value="Admin"/>
+    <classes>
+      <class name="TestNGPrac.ClassFive">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+          <include name="ClosingBroser"/>
+          <include name="BrowserLaunching"/>
+          <include name="addUser"/>
+        </methods>
+      </class> <!-- TestNGPrac.ClassFive -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

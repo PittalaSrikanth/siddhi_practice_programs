@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="sample1" value="Hello siddhi-1"></parameter>
+	<parameter name="sample2" value="Hello siddhi-2"></parameter>
+	<test thread-count="5" name="Test">
+		<parameter name="sample2" value="Hello siddhi form test-2"></parameter>
+		<groups>
+			<run>
+				<include name="smoke"></include>
+				<exclude name="regression"></exclude>
+			</run>
+		</groups>
+		<classes>
+			<class name="TestNGPractice.ClassOne"></class>
+			<class name="TestNGPractice.ClassTwo"></class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -9,12 +9,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class GoogleDemo {
-
-	public static void main(String[] args) throws InterruptedException
+	@Test
+	public  void testngtest()
 	{
 		
 		ChromeOptions ops = new ChromeOptions();
@@ -43,10 +44,6 @@ public class GoogleDemo {
 		driver.findElements(By.className("gb_f")).get(1).click();
 		
 		driver.navigate().back();
-		
-		
-		driver.findElement(By.xpath("//a[@data-toggle='pill']")).click();
-		
 		
 		driver.quit();
 		
