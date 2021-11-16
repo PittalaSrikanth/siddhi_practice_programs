@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test parallel="methods" name="Test(failed)">
+    <classes>
+      <class name="Day1.BrowserLanching4">
+        <methods>
+          <include name="f4"/>
+        </methods>
+      </class> <!-- Day1.BrowserLanching4 -->
+      <class name="Day1.BrowserLanching10">
+        <methods>
+          <include name="f5"/>
+          <include name="f6"/>
+        </methods>
+      </class> <!-- Day1.BrowserLanching10 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
