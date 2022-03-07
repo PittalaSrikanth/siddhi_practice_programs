@@ -21,12 +21,12 @@ public class BrowserLanching
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--no-sandbox");
 			options.addArguments("--disable-dev-shm-usage");
-		  	DesiredCapabilities  ds =DesiredCapabilities.chrome();
+		  	DesiredCapabilities  ds =new DesiredCapabilities();
 		  	ds.setCapability(ChromeOptions.CAPABILITY, options);
 		  	options.merge(ds);
 		  	ds.setCapability(CapabilityType.BROWSER_NAME, BrowserType.CHROME);
 		  	ds.setCapability(CapabilityType.PLATFORM_NAME,Platform.WINDOWS);
-		  	URL url = new URL("http://192.168.0.4:4446/wd/hub");
+		  	URL url = new URL("http://192.168.0.6:4999/wd/hub");
 			WebDriver driver = new RemoteWebDriver(url, ds);
 			driver.manage().window().maximize();
 			driver.manage().window().fullscreen();
@@ -43,7 +43,7 @@ public class BrowserLanching
 	  	DesiredCapabilities  ds = new DesiredCapabilities();
 	  	ds.setCapability(CapabilityType.BROWSER_NAME, BrowserType.FIREFOX);
 	  	ds.setCapability(CapabilityType.PLATFORM_NAME,Platform.WINDOWS);
-	  	URL url = new URL("http://192.168.0.4:4991/wd/hub");
+	  	URL url = new URL("http://192.168.0.6:4999/wd/hub");
 		RemoteWebDriver driver = new RemoteWebDriver(url, ds);
 		driver.manage().window().maximize();
 		driver.manage().window().fullscreen();
@@ -54,22 +54,22 @@ public class BrowserLanching
 		driver.quit();
 	  }
 	
-//	@Test
-//	  public void f3() throws MalformedURLException {
-//		
-//	  	DesiredCapabilities  ds = new DesiredCapabilities();
-//	  	ds.setCapability(CapabilityType.BROWSER_NAME, BrowserType.IE);
-//	  	ds.setCapability(CapabilityType.PLATFORM_NAME,Platform.WINDOWS);
-//	  	URL url = new URL("http://localhost:4999/wd/hub");
-//		RemoteWebDriver driver = new RemoteWebDriver(url, ds);
-//		driver.manage().window().maximize();
-//		driver.manage().window().fullscreen();
-//		driver.get("https://www.google.co.in/");
-//		String title = driver.getTitle();
-//		System.out.println("Class 1 Method 3");
-//		System.out.println(title);
-//		driver.quit();
-//	  }
+	@Test
+	  public void f3() throws MalformedURLException {
+		
+	  	DesiredCapabilities  ds = new DesiredCapabilities();
+	  	ds.setCapability(CapabilityType.BROWSER_NAME, BrowserType.IE);
+	  	ds.setCapability(CapabilityType.PLATFORM_NAME,Platform.WINDOWS);
+	  	URL url = new URL("http://192.168.0.6:4999/wd/hub");
+		RemoteWebDriver driver = new RemoteWebDriver(url, ds);
+		driver.manage().window().maximize();
+		driver.manage().window().fullscreen();
+		driver.get("https://www.google.co.in/");
+		String title = driver.getTitle();
+		System.out.println("Class 1 Method 3");
+		System.out.println(title);
+		driver.quit();
+	  }
 
 //	@Test
 //	  public void f4() throws MalformedURLException {

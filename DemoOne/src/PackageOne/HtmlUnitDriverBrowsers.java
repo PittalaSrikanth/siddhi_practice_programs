@@ -30,7 +30,7 @@ public class HtmlUnitDriverBrowsers {
 		HtmlUnitDriver chrome = new HtmlUnitDriver(BrowserVersion.CHROME);
 		chrome.get("https://www.google.co.in/");
 		chrome.close();
-		chrome.quit();
+//		chrome.quit();
 		
 		// HtmlUnitDriver
 		HtmlUnitDriver ff = new HtmlUnitDriver(BrowserVersion.FIREFOX_52);

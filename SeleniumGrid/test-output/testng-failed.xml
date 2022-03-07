@@ -5,7 +5,7 @@
     <classes>
       <class name="Day1.BrowserLanching">
         <methods>
-          <include name="f2"/>
+          <include name="f3"/>
         </methods>
       </class> <!-- Day1.BrowserLanching -->
     </classes>
