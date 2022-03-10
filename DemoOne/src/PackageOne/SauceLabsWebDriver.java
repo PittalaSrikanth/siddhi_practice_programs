@@ -38,6 +38,7 @@ public class SauceLabsWebDriver {
 		
 		driver.get("http://demo.guru99.com/test/newtours/");
 		System.out.println(driver.getTitle());
+		Thread.sleep(10000);
 		driver.findElement(By.xpath("//*[text()='REGISTER']")).click();
 		Select country = new Select(driver.findElement(By.name("country")));
 		Thread.sleep(5000);
